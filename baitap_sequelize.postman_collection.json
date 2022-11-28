@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "953f89e9-bb66-483b-b6f3-6fcea7a8f99a",
+		"name": "baitap_sequelize",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23736073"
+	},
+	"item": [
+		{
+			"name": "rateRes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/rateRes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"rateRes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rateUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/rateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"rateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "likeUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/likeUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"likeUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "likeRes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/likeRes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"likeRes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createLikeAndUnlike",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"8\",\r\n     \"res_id\":\"3\",\r\n    \"date_like\":\"2022-01-01 09:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/createLikeUnlike",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"createLikeUnlike"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createRateRes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"3\",\r\n        \"res_id\":\"3\",\r\n        \"amount\":\"4\",\r\n        \"date_rate\":\"2022-01-01 09:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/addRateRes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"addRateRes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addFoodOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"food_id\":\"3\"\r\n    \"amount\":\"5\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/addFoodOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"addFoodOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
